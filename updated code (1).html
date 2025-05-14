@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Profile</title>
+    <style>
+.card {
+  max-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#badec6;
+	    <p>Welcome to my Digital Profile</p>
+        }
+        header {
+            background-color: #873948;
+            color: #fff;
+            padding: 2px;
+            text-align: center;
+	    font-family:ALGERIAN;
+        }
+        footer {
+	    font-family: Lucida caligraphy;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .tab {
+            display: none;
+            padding: 20px;
+            text-align: center;
+          
+        }
+        .active {
+            display: block;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+	nav a:nth-child(1){background-color:#43afb5;}
+	nav a:nth-child(2){background-color:#43afb5;}
+	nav a:nth-child(3){background-color:#43afb5;}
+	nav a:nth-child(4){background-color:#43afb5;}
+	nav a:nth-child(5){background-color:#43afb5;}
+	nav a:nth-child(6){background-color:#43afb5;}
+
+</style>
+</head>
+<body>
+
+    <header>
+        <h2 style="text-align:center">My Digital Profile</h2>
+    </header>   
+
+
+<div class="card">
+  <img src="/D:\photos/img_123.jpg" alt="SAI" style="width:100%">
+  <h1> </h1>
+  </div>
+  <nav>
+    <ul>
+        <li><a href="#aboutMeTab">About Me</a></li>
+        <li><a href="#qualificationTab">Qualification</a></li>
+        <li><a href="#futureGoalsTab">Future Goals</a></li>
+        <li><a href="#familyTab">Family</a></li>
+        <li><a href="#medicalHistoryTab">Medical History</a></li>
+        <li><a href="#financialStatusTab">Financial Status</a></li>
+    </ul>
+</nav>
+
+<div id="aboutMeTab" class="tab inactive">
+    <h2>About Me</h2>
+    <p><strong>Name:</strong>B.SaiSpoorthi</p>
+    <p><strong>Mobile:</strong>XXXXXXXXXX</p>
+    <p><strong>Email:</strong>spoorthibotla@gmail.com</p>
+    <p><strong>Address:</strong>H-NO: 17-42, Bhupalpally,Telangana</p>
+</div>
+
+<div id="qualificationTab" class="tab">
+    <h2>Qualification</h2>
+    <table>
+        <tr>
+            <th>Exam</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Grade/Percentage</th>
+        </tr>
+        <tr>
+            <td>SSC</td>
+            <td>Saint Peter's High School</td>
+            <td>2020</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>Intermediate</td>
+            <td>Pavitra Junior College</td>
+            <td>2022</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>under Graduation</td>
+            <td>Sridevi Womens Engineering College</td>
+            <td>2026</td>
+            <td>90</td>
+        </tr>
+    </table>
+</div>
+
+<div id="futureGoalsTab" class="tab">
+    
+<h2>Future Goals</h2>
+
+    <p>to persue higher education</p>
+</div>
+
+<div id="familyTab" class="tab">
+    <h2>Family</h2>
+    <p><strong>Father:</strong>B.Vivekananda</p>
+    <p><strong>Mother:</strong>B.Padma</p>
+<p><strong>Contact NO:<strong>XXXXXXXXXX</p>
+  
+</div>
+
+<div id="medicalHistoryTab" class="tab">
+    <h2>Medical History</h2>
+    <p>Insert your medical history details here.</p>
+</div>
+
+<div id="financialStatusTab" class="tab">
+    <h2>Financial Status</h2>
+    <p>Insert your financial status details here.</p>
+</div> 
+
+<footer>
+    <p> created by SaiSpoorthi</p>
+</footer>
+
+
+
+<script>
+    const tabs = document.querySelectorAll('.tab');
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach((link, index) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabs[index].classList.add('active');
+        });
+    });
+  </script>
+</body>
+</html>
